@@ -1,6 +1,7 @@
 #!/bin/bash
+#comments
 if [[ $1 = *.urls ]]; then
-	wget -i $1 --trust-server-names=on --restrict-file-names=nocontrol -c
+    wget -i $1 --trust-server-names=on --restrict-file-names=nocontrol -c
 else
-	wget $1 --trust-server-names=on --restrict-file-names=nocontrol -c
+    wget $1 --trust-server-names=on --restrict-file-names=nocontrol -c
 fi
